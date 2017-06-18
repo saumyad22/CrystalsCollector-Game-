@@ -1,0 +1,17 @@
+ Selects a random number to be shown at the start of the game
+   Number should be should be between 19 - 120
+
+   Declare variables 
+
+  Setting up random numbers for each jewel
+   Random number has to be between 1 - 12
+
+  create function reset
+
+  adds the wins to the userTotal
+
+  addes the losses to the userTotal
+
+  on click functions for 4 crystals
+
+  sets win/lose conditions

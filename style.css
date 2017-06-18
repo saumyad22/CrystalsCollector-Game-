@@ -1,0 +1,58 @@
+body{
+	background-image: url(images/background.jpg);
+}
+
+#header{
+	
+	background-color: orange;
+	color: #fff;
+	text-align: center;
+
+}
+#rules{
+	background-color:lavender;
+	color : green;
+	padding : 10px;
+	font-family: serif;
+	font-size: 15px;
+}
+
+#numdisplay{
+   background-color:lightgreen;
+   height: 100px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   padding-top: 40px;
+   
+
+}
+
+#scores{
+	 background-color:lightblue;
+	 width: 100px;
+	  height: 100px;
+	  margin-left: 10px;
+	  color: #fff;
+	  padding-top: 30px;
+}
+
+#t{
+	background-color:lightgreen;
+     height: 60px;
+     color: #fff;
+     padding-top: 20px;
+}
+
+#total{
+	 background-color:lightgreen;
+	 width: 100px;
+     height: 60px;
+     margin-left: 10px;
+     text-align: center;
+     font-size: 20px;
+     font-weight: bold;
+     padding-top: 20px;
+  
+}
+
