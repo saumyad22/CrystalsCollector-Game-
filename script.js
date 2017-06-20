@@ -5,30 +5,21 @@ var userScore = 0;
 var randomNum;
 var num1,num2,num3,num4;
 
-
- 
- 
-
 $("#total").text(userScore);
 reset();
 
 function reset(){
-  
-  randomNum = Math.floor(Math.random()*101+19);
-  $("#numdisplay").html(randomNum);
-  console.log(randomNum);
-
-
-num1 = Math.floor(Math.random()*11+1);
-num2 = Math.floor(Math.random()*11+1);
+ randomNum = Math.floor(Math.random()*101+19);
+ $("#numdisplay").html(randomNum);
+ console.log(randomNum);
+ 
+ num1 = Math.floor(Math.random()*11+1);
+ num2 = Math.floor(Math.random()*11+1);
  num3 = Math.floor(Math.random()*11+1);
  num4 = Math.floor(Math.random()*11+1);
-console.log(num1, num2, num3, num4);
- 
-
-  	
-  	userScore = 0;
-$("#total").text(userScore);
+ console.log(num1, num2, num3, num4);
+ userScore = 0;
+ $("#total").text(userScore);
 }
 
 
@@ -44,10 +35,12 @@ $("#one").on("click", function(){
     if(userScore == randomNum){
 
     	wins++;
-    	$("#win").html(wins);
 
-     $("#total").text(userScore);
-     reset();
+    	$("#win").html("Wins : " + wins);
+
+
+      $("#total").text(userScore);
+      reset();
      
     }
 
@@ -55,15 +48,15 @@ $("#one").on("click", function(){
     else if(userScore > randomNum){
     	losses++;
 
-    	$("#lose").html(losses);
+    	$("#lose").html("Losses : " + losses);
 
-     $("#total").text(userScore);
+      $("#total").text(userScore);
       
-       reset();
+      reset();
 
     }
 
- console.log(userScore);
+     console.log(userScore);
 
 });
 
@@ -77,7 +70,7 @@ $("#two").on("click", function(){
     if(userScore == randomNum){
 
     	wins++;
-    	$("#win").html(wins);
+    	 $("#win").html("Wins : " + wins);
 
      $("#total").text(userScore);
 
@@ -87,44 +80,33 @@ $("#two").on("click", function(){
     else if(userScore > randomNum){
     	losses++;
 
-    	$("#lose").html(losses);
+    $("#lose").html("Losses : " + losses);
 
      $("#total").text(userScore);
        reset();
 
     }
- console.log(userScore);
+  console.log(userScore);
 
 
 });
 
 $("#three").on("click", function(){
-   
-
-   userScore = userScore + num3;
-
-	  $("#total").text(userScore);
-
-    if(userScore == randomNum){
-
-    	wins++;
-    	$("#win").html(wins);
-
-     $("#total").text(userScore);
-      reset();
-    }
-
-    else if(userScore > randomNum){
-    	losses++;
-
-    	$("#lose").html(losses);
-
-     $("#total").text(userScore);
-       reset();
-
-    }
- console.log(userScore);
-
+  userScore = userScore + num3;
+  $("#total").text(userScore);
+  if(userScore == randomNum){
+    wins++;
+    $("#win").html("Wins : " + wins);
+    $("#total").text(userScore);
+    reset();
+  }
+  else if(userScore > randomNum){
+    losses++;
+    $("#lose").html("Losses : " + losses);
+    $("#total").text(userScore);
+   reset();
+  }
+  console.log(userScore);
 });
 
 $("#four").on("click", function(){
@@ -137,16 +119,16 @@ $("#four").on("click", function(){
     if(userScore == randomNum){
 
     	wins++;
-    	$("#win").html(wins);
+    	 $("#win").html("Wins : " + wins);
 
-     $("#total").text(userScore);
-      reset();
+       $("#total").text(userScore);
+       reset();
     }
 
     else if(userScore > randomNum){
     	losses++;
 
-    	$("#lose").html(losses);
+   $("#lose").html("Losses : " + losses);
 
      $("#total").text(userScore);
        reset();
